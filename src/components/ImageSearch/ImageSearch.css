@@ -45,3 +45,15 @@
       width: 100%;
     }
   }
+
+  .author-info {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .author-info p {
+    margin: 0;
+    padding: 2px 0;
+  }
