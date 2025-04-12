@@ -1,9 +1,8 @@
 // components/Editor/Editor.jsx
 import React, { useEffect, useRef, useState } from 'react';
-import Toolbar from '../Toolbar/Toolbar';
-import Canvas from '../canvas/canvas';
-import { useCanvas } from '../../hooks/useCanvas';
-import './Editor.css';
+import Toolbar from './Toolbar';
+import Canvas from './Canvas';
+import { useCanvas } from '../hooks/useCanvas';
 
 function Editor({ selectedImage, onBackToSearch }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { searchImages, getMockImages } from "../../services/api";
-import "./ImageSearch.css";
+import { searchImages, getMockImages } from "../services/api";
 
 function ImageSearch({ setImages, setLoading, setError }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -69,9 +68,7 @@ function ImageSearch({ setImages, setLoading, setError }) {
             Search
           </button>
         </div>
-        <div className="search-examples">
-          Try: nature, city, abstract, food, animals
-        </div>
+      
       </form>
     </div>
   );

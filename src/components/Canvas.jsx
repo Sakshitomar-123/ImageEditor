@@ -1,6 +1,5 @@
 // components/Canvas/Canvas.jsx
 import React, { useEffect, useRef } from 'react';
-import './canvas.css';
 
 function Canvas({ canvasRef, fabricCanvas }) {
   const containerRef = useRef(null);

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
-import ImageSearch from './components/ImageSearch/ImageSearch';
-import ImageGrid from './components/ImageGrid/ImageGrid';
-import Editor from './components/Editor/Editor';
+import ImageSearch from './components/ImageSearch';
+import ImageGrid from './components/ImageGrid';
+import Editor from './components/Editor';
 import './App.css';
 
 function App() {
