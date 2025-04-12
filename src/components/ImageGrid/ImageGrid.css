@@ -1,0 +1,52 @@
+/* components/ImageGrid/ImageGrid.css */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white;
+  }
+  
+  .image-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .image-info {
+    padding: 1rem;
+  }
+  
+  .image-credit {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .edit-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+  }
